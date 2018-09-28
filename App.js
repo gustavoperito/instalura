@@ -33,7 +33,7 @@ export default class App extends Component {
 
    render() {     
       return (
-         <FlatList style={styles.container} data={this.state.fotos} keyExtractor={item => item.id} renderItem={({ item }) =>
+         <FlatList style={styles.container} data={this.state.fotos} keyExtractor={item => item.id.toString()} renderItem={({ item }) =>
                <Post foto={item} />
             }
          />
